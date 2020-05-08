@@ -52,5 +52,3 @@ steps:
     SmtpPort: '465'
     SmtpUsername: 'marko.churlinoski@interworks.com.mk'
     SmtpPassword: 'Marko1993.'
-
-
