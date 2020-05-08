@@ -42,21 +42,15 @@ steps:
 
 - task: SendEmail@1
   inputs:
-    To: 'marko@churlinoski.mk'
-    From: 'azure-devops@churlinoski.mk'
+    To: 'marko.churlinoski@interworks.com.mk'
+    From: 'marko.churlinoski@interworks.com.mk'
     Subject: 'Create Order'
     Body: '$(html)'
     BodyAsHtml: true
     AddAttachment: false
-    SmtpServer: 'mail.churlinoski.mk'
+    SmtpServer: 'mail.interworks.com.mk'
     SmtpPort: '465'
-    SmtpUsername: 'cicd@churlinoski.mk'
+    SmtpUsername: 'marko.churlinoski@interworks.com.mk'
     SmtpPassword: 'Marko1993.'
 
-- task: SendGrid@1
-  inputs:
-    sendgridkey: 'P0NuJoP7Tf2J1iZnhGLejQ'
-    to: 'marko@churlinoski.mk'
-    from: 'marko@churlinoski.mk'
-    subject: 'API Testing - Salesforce - Functional - Results'
-    htmlbody: '$(html)'
+
