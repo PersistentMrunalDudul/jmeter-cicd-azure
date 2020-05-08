@@ -49,8 +49,7 @@ steps:
     BodyAsHtml: true
     AddAttachment: false
     SmtpServer: 'mail.churlinoski.mk'
-    SmtpPort: '587'
+    SmtpPort: '465'
     SmtpUsername: 'cicd@churlinoski.mk'
     SmtpPassword: 'Marko1993.'
-    UseSSL: false
 
