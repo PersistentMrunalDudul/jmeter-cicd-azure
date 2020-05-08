@@ -40,15 +40,10 @@ steps:
     testResultsFiles: 'results/unit/Create_Order.xml'
     testRunTitle: 'Create Order'
 
-- task: SendEmail@1
+- task: SendGrid@1
   inputs:
-    To: 'marko.churlinoski@interworks.com.mk'
-    From: 'marko.churlinoski@interworks.com.mk'
-    Subject: 'Create Order'
-    Body: '$(html)'
-    BodyAsHtml: true
-    AddAttachment: false
-    SmtpServer: 'mail.interworks.com.mk'
-    SmtpPort: '465'
-    SmtpUsername: 'marko.churlinoski@interworks.com.mk'
-    SmtpPassword: 'Marko1993.'
+    sendgridkey: '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'
+    to: 'markocurlinoski.uie@gmail.com'
+    from: 'markocurlinoski.uie@gmail.com'
+    subject: 'test'
+    htmlbody: '$(html)'
