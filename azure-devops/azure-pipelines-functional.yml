@@ -55,7 +55,7 @@ steps:
 
 - task: SendGrid@1
   inputs:
-    sendgridkey: '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'
+    sendgridkey: 'P0NuJoP7Tf2J1iZnhGLejQ'
     to: 'marko@churlinoski.mk'
     from: 'marko@churlinoski.mk'
     subject: 'API Testing - Salesforce - Functional - Results'
