@@ -59,4 +59,4 @@ steps:
     to: 'marko@churlinoski.mk'
     from: 'marko@churlinoski.mk'
     subject: 'API Testing - Salesforce - Functional - Results'
-    htmlbody: 'test'
+    htmlbody: '$(html)'
