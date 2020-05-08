@@ -49,8 +49,8 @@ steps:
     BodyAsHtml: true
     AddAttachment: false
     SmtpServer: 'mail.churlinoski.mk'
-    SmtpPort: '25'
-    SmtpUsername: 'azure-devops@churlinoski.mk'
+    SmtpPort: '587'
+    SmtpUsername: 'cicd@churlinoski.mk'
     SmtpPassword: 'Marko1993.'
     UseSSL: false
 
