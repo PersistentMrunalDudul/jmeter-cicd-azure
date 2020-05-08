@@ -37,7 +37,7 @@ steps:
   displayName: Publish JMeter test results
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'results/unit/Create_Order.xml'
+    testResultsFiles: 'results/unit/APITestingSF.xml'
     testRunTitle: 'Create Order'
 
 - task: SendGrid@1
