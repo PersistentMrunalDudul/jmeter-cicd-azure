@@ -24,7 +24,7 @@ steps:
     script: |
       cd D:\a\1\s\results\html
       dir
-      powershell -command "\"$(Get-Content Create_Order.html)\" > report.html".
+      powershell -command "\"$(Get-Content APITestingSF.html)\" > report.html".
 
 - task: FileContenttoVariable@2
   displayName: Set test results as variable
