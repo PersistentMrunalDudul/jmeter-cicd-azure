@@ -24,7 +24,7 @@ steps:
     script: |
       cd D:\a\1\s\results\html
       dir
-      powershell -command "\"$(Get-Content Create_Customer.html)\" > report.html".
+      powershell -command "\"$(Get-Content APITestingSF.html)\" > report.html".
 
 - task: FileContenttoVariable@2
   displayName: Set test results as variable
@@ -33,16 +33,3 @@ steps:
     VariableName: 'html'
     AddNewlines: false
    
-- task: SendEmail@1
-  inputs:
-    To: 'marko@churlinoski.mk'
-    From: 'azure-devops@churlinoski.mk'
-    Subject: 'Create Customer - Load test'
-    Body: '$(html)'
-    BodyAsHtml: true
-    AddAttachment: false
-    SmtpServer: 'mail.churlinoski.mk'
-    SmtpPort: '25'
-    SmtpUsername: 'azure-devops@churlinoski.mk'
-    SmtpPassword: 'Marko1993.'
-    UseSSL: false
